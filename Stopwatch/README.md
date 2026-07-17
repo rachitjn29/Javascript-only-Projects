@@ -32,32 +32,12 @@ Stopwatch/
 
 ## 📸 Preview
 
-> Add a screenshot of your project inside the **assets** folder.
-
 ```
 assets/preview.png
 ```
 
 ## 🌐 Live Demo
 
-Add your GitHub Pages link here.
-
 ```
 https://your-username.github.io/Stopwatch/
 ```
-
-## 💻 Run Locally
-
-```bash
-git clone https://github.com/your-username/Stopwatch.git
-```
-
-Open `index.html` in your browser.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-⭐ If you like this project, don't forget to star the repository.
