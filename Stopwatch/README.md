@@ -32,12 +32,8 @@ Stopwatch/
 
 ## 📸 Preview
 
-```
-assets/preview.png
-```
+![Stopwatch Preview](assets/preview.png)
 
 ## 🌐 Live Demo
 
-```
-https://your-username.github.io/Stopwatch/
-```
+https://rachitjn29.github.io/Javascript-only-Projects/Stopwatch/
