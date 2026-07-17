@@ -20,7 +20,8 @@ A responsive calculator built using HTML, CSS, and JavaScript.
 
 ## Live Demo
 
-GitHub Pages link
+Calculator
+https://rachitjn29.github.io/Javascript-only-Projects/Calculator/
 
 ## Author
 Rachit Jain
