@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen">
+        <div class="card">
+            <h1>JavaScript Quiz</h1>
+            <p>Test your HTML, CSS & JavaScript knowledge with 10 questions.</p>
+            <ul class="rules">
+                <li>10 Questions</li>
+                <li>15 Seconds Each</li>
+                <li>No Negative Marking</li>
+            </ul>
+            <button class="start_btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div>
+                <h2>JavaScript Quiz</h2>
+                <span class="question-count"></span>
+            </div>
+            <div class="timer">
+                <span class="timer_text">15</span>
+            </div>
+        </header>
+
+        <div class="time_line"></div>
+
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Next →</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="result-icon">🎉</div>
+        <h2>Quiz Completed</h2>
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Play Again</button>
+            <button class="quit">Home</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

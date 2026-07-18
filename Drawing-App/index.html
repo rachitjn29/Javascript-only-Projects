@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SketchPad Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎨 SketchPad Pro</h1>
+      <div class="actions">
+        <button id="undo">↩</button>
+        <button id="redo">↪</button>
+        <input type="file" id="imageUpload" accept="image/*" hidden>
+        <button id="uploadBtn">Image</button>
+        <button id="download">Download</button>
+        <button id="clear">Clear</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <button class="tool active" data-tool="pencil">✏️</button>
+      <button class="tool" data-tool="eraser">🧽</button>
+      <button class="tool" data-tool="line">/</button>
+      <button class="tool" data-tool="rectangle">▭</button>
+      <button class="tool" data-tool="circle">◯</button>
+      <button class="tool" data-tool="triangle">△</button>
+      <input type="color" id="colorPicker" value="">
+
+      <div class="size">
+      <span>Size :</span>
+      <input type="range" id="brushSize" min="1" max="40" value="5">
+      </div>
+
+    </div>
+
+    <div class="canvas-box">
+      <canvas id="canvas"></canvas>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

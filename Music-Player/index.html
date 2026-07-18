@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Music Player</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+
+<div class="bg1"></div>
+<div class="bg2"></div>
+
+<div class="player">
+
+<div class="album">
+<img src="images/music-1.jpg" id="cover">
+<div class="ring"></div>
+</div>
+
+<div class="info">
+<h2 id="title">Song Name</h2>
+<p id="artist">Artist</p>
+</div>
+
+<div class="progress">
+<input type="range" id="progress" value="0">
+<div class="time">
+<span id="current">0:00</span>
+<span id="duration">0:00</span>
+</div>
+</div>
+
+<div class="controls">
+<button id="prev"><i class="fa-solid fa-backward-step"></i></button>
+<button id="play"><i class="fa-solid fa-play"></i></button>
+<button id="next"><i class="fa-solid fa-forward-step"></i></button>
+</div>
+
+<div class="bottom">
+<button id="repeat"><i class="fa-solid fa-repeat"></i></button>
+
+<div class="volume">
+<i class="fa-solid fa-volume-high"></i>
+<input type="range" id="volume" min="0" max="100" value="100">
+</div>
+
+<button id="playlistBtn">
+<i class="fa-solid fa-music"></i>
+</button>
+</div>
+
+<ul id="playlist"></ul>
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="js/music-list.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

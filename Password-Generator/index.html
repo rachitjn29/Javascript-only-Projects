@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="card">
+
+      <div class="heading">
+        <h1>Password Generator</h1>
+        <p>Create strong and secure passwords instantly.</p>
+      </div>
+
+      <div class="password-section">
+        <label>Password</label>
+
+        <div class="password-box">
+          <input type="text" id="password" placeholder="Generate Password" readonly>
+
+          <button id="copyBtn">
+            <i class="ri-file-copy-line"></i>
+          </button>
+
+        </div>
+        <button id="generateBtn">
+          <i class="ri-refresh-line"></i>
+          Generate Password
+        </button>
+      </div>
+
+      <div class="settings">
+        <h3>Password Settings</h3>
+        <div class="length-box">
+          <label for="length">
+            Password Length
+          </label>
+          <input type="number" id="length" min="4" max="64" value="8">
+        </div>
+
+        <div class="options">
+          
+          <label class="option">
+            <input type="checkbox" id="uppercase">
+            Uppercase (A-Z)
+          </label>
+
+          <label class="option">
+            <input type="checkbox" id="lowercase">
+            Lowercase (a-z)
+          </label>
+
+          <label class="option">
+            <input type="checkbox" id="numbers">
+            Numbers (0-9)
+          </label>
+
+          <label class="option">
+            <input type="checkbox" id="symbols">
+            Symbols (@#$&)
+          </label>
+
+        </div>
+      </div>
+      <div class="strength">
+        <div class="strength-header">
+          <span>Password Strength</span>
+          <span id="strengthText">
+            Strong
+          </span>
+        </div>
+        <div class="strength-bar">
+          <div id="strengthFill"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast">
+    <i class="ri-checkbox-circle-fill"></i>
+    Password Copied
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

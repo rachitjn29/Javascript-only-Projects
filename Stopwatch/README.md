@@ -19,6 +19,14 @@ A clean and responsive Stopwatch built using **HTML**, **CSS**, and **JavaScript
 - CSS3
 - JavaScript (ES6)
 
+## 📸 Preview
+
+![Stopwatch Preview](assets/preview.png)
+
+## 🌐 Live Demo
+
+https://rachitjn29.github.io/Javascript-only-Projects/Stopwatch/
+
 ## 📂 Project Structure
 
 ```
@@ -29,11 +37,6 @@ Stopwatch/
 │── script.js
 └── README.md
 ```
+# Author
 
-## 📸 Preview
-
-![Stopwatch Preview](assets/preview.png)
-
-## 🌐 Live Demo
-
-https://rachitjn29.github.io/Javascript-only-Projects/Stopwatch/
+**Rachit Jain**

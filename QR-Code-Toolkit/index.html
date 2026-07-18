@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Toolkit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>QR Toolkit</h1>
+                <p>
+                    Generate & Scan QR Codes
+                </p>
+            </div>
+
+            <div class="tabs">
+                <button id="generatorBtn" class="active">
+                    QR Code Generator
+                </button>
+                <button id="scannerBtn">
+                    QR Code Scanner
+                </button>
+            </div>
+
+            <section id="generatorSection">
+                <div class="input-group">
+                    <label>
+                        Enter Text / URL
+                    </label>
+                    <input id="qrInput" type="text" placeholder="https://example.com">
+                </div>
+
+                <div class="options">
+                    <div>
+                        <label>
+                            Size
+                        </label>
+                        <select id="size">
+                            <option value="100">100 x 100</option>
+                            <option value="150">150 x 150</option>
+                            <option value="200">200 x 200</option>
+                            <option value="250" selected>250 x 250</option>
+                            <option value="300">300 x 300</option>
+                            <option value="350">350 x 350</option>
+                            <option value="400">400 x 400</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Color</label>
+                        <input id="color" type="color" value="#000000">
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button id="generateBtn">
+                        Generate
+                    </button>
+
+                    <button id="downloadBtn">
+                        Download
+                    </button>
+
+                    <button id="clearBtn">
+                        Clear
+                    </button>
+                </div>
+
+                <div id="qrBox"></div>
+     </section>
+
+
+            <section id="scannerSection" class="hide">
+
+                <div id="reader"></div>
+                <div id="readerFile"></div>
+
+                <div class="buttons">
+                    <button id="startScanner">
+                        Start Camera
+                    </button>
+
+                    <button id="stopScanner">
+                        Stop Camera
+                    </button>
+                </div>
+
+                <div class="upload">
+                    <label>Upload QR Image
+                    <input id="imageInput" type="file" accept="image/*" hidden> 
+                    </label>
+                </div>
+
+                <div class="result">
+                    <h3>Scan Result</h3>
+                    <textarea id="result" readonly placeholder="No QR Detected"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button id="copyBtn">
+                        Copy
+                    </button>
+
+                    <button id="openBtn">
+                        Open URL
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

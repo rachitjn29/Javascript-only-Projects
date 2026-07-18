@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, rgb(90, 172, 255), rgb(171, 226, 248));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(to bottom, rgb(0, 128, 255), skyblue);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    background: #9cc8ee;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.search-box input:focus {
+    border-color: #3b82f6;
+}
+
+.search-box button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #194f88;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-box button:hover {
+    background: #2563eb;
+}
+
+.weather-card {
+    display: none;
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+#temp {
+    font-size: 52px;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+#condition {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.detail {
+    background: #c3f3fe;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.detail h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #475569;
+}
+
+.detail p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+#message {
+    margin-top: 20px;
+    text-align: center;
+    color: #ef4444;
+    font-weight: bold;
+}
+
+@media(max-width:500px) {
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+}

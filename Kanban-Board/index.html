@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div>
+            <h1>Kanban Board</h1>
+            <p>With Drag & Drop Feature to organise your tasks with (LocalStorage).</p>
+        </div>
+
+        <button id="addTaskBtn">
+            <i class="ri-add-line"></i>
+            Add Task
+        </button>
+    </header>
+    <main>
+        <section class="column" id="todo">
+            <div class="column-header">
+                <h2>Todo-Start</h2>
+                <span class="count">0</span>
+            </div>
+            <div class="task-list">
+                <p class="empty">No Tasks</p>
+            </div>
+        </section>
+
+        <section class="column" id="progress">
+            <div class="column-header">
+                <h2>In Progress</h2>
+                <span class="count">0</span>
+            </div>
+
+            <div class="task-list">
+                <p class="empty">No Tasks</p>
+            </div>
+        </section>
+
+        <section class="column" id="done">
+            <div class="column-header">
+                <h2>Done</h2>
+                <span class="count">0</span>
+            </div>
+            <div class="task-list">
+                <p class="empty">No Tasks</p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<div class="modal" id="taskModal">
+    <div class="modal-content">
+        <h2 id="modalTitle">Add Task</h2>
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter task..."
+            maxlength="50">
+        <div class="modal-buttons">
+            <button id="cancelBtn">Cancel</button>
+            <button id="saveBtn">Save</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
