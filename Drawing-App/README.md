@@ -57,7 +57,7 @@ SketchPad-Pro/
 
 ## 🌐 Live Demo
 
-https://rachitjn29.github.io/Javascript-only-Projects/Drwaing-App/
+https://rachitjn29.github.io/Javascript-only-Projects/Drawing-App/
 
 ---
 
