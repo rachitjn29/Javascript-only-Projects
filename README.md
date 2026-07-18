@@ -86,6 +86,12 @@ Modern and responsive QR Code toolkit featuring QR code generation, real-time QR
 
 🔗 Live Demo: https://rachitjn29.github.io/Javascript-only-Projects/QR-Code-ToolKit/
 
+## IMP 
+
+> **Note:** Standalone **Todo List** and **Notes** projects were intentionally not included, as both functionalities are already implemented in the **Kanban Board** with drag & drop, task management, editing, and local storage.
+
+> **Note:** A standalone **Movie Search** and **Recipe Search** project was intentionally skipped, as its functionality will be included in the **React Movie Streaming App** with API integration, search, filtering, and sorting.
+
 ## 🚀 More Projects Coming Soon
 
 This repository will continue to grow with more **Games**, **Media Tools**, **Canvas Projects**, **API Integrations**, **Utility Apps**, and **Interactive JavaScript Applications**.
