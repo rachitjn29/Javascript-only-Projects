@@ -20,6 +20,7 @@ Modern and responsive stopwatch with start, pause, reset, accurate time measurem
 
 ### 🕒 Digital Clock
 Real-time digital clock displaying the current time with AM/PM format and responsive ui.
+
 🔗 Live Demo: https://rachitjn29.github.io/Javascript-only-Projects/Digital-Clock/
 
 ---
