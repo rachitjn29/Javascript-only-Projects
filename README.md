@@ -84,7 +84,7 @@ A modern and responsive Tic Tac Toe game featuring two-player gameplay, winner a
 ### 📱 QR Code Toolkit
 Modern and responsive QR Code toolkit featuring QR code generation, real-time QR scanning, image-based QR detection, customizable QR codes, camera support, and an intuitive user interface.
 
-🔗 Live Demo: https://rachitjn29.github.io/Javascript-only-Projects/QR-Code-ToolKit/
+🔗 Live Demo: https://rachitjn29.github.io/Javascript-only-Projects/QR-Code-Toolkit/
 
 ## IMP 
 
